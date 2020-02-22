@@ -2,7 +2,7 @@
 		//  Vector layer
 		var vector = new ol.layer.Vector( { source: new ol.source.Vector() })
 
-		// The map
+		/*// The map
 		var map = new ol.Map
 			({	target: 'map',
 				view: new ol.View
@@ -13,7 +13,7 @@
 					[	new ol.layer.Tile({ source: new ol.source.OSM() }),
 						vector
 					]
-			});
+			});*/
 
 		// Main control bar
 		var mainbar = new ol.control.Bar();

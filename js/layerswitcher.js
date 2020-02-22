@@ -471,7 +471,7 @@
 		});
 
 	editbar.addControl(ledit);
-	/* comentado*/
+	/* comentado
 	var fedit = new ol.control.Toggle(
 		{
 			html: '<i class="fa fa-bookmark-o fa-rotate-270" ></i>',
@@ -516,7 +516,7 @@
 					]
 				})
 		});
-
+*/
 	// Nuevo codigo del boton agregado
 	var features;
 	var control = false;//verifica si ya se activo el boton
@@ -544,7 +544,8 @@
 		});
 	editbar.addControl(fedit);
 
-	// Add a simple push button to save features*/
+	/*
+	// Add a simple push button to save features
 	var save = new ol.control.Button(
 		{
 			html: '<i class="fa fa-download"></i>',
@@ -560,7 +561,7 @@
 	function info(i) {
 		$("#info").html(i || "");
 	}
-
+*/
 
 	//***************** para el poligono parcela
 	var styles = [
@@ -568,7 +569,7 @@
 			stroke: new ol.style.Stroke({
 				color: 'blue',
 				width: 3
-			}),
+			})/*,
 			fill: new ol.style.Fill({
 				color: 'rgba(0, 0, 255, 0.1)'
 			}),
@@ -576,7 +577,7 @@
 				// return the coordinates of the first ring of the polygon
 				var coordinates = feature.getGeometry().getCoordinates()[0];
 				return new ol.geom.MultiPoint(coordinates);
-			}
+			}*/
 		})
 
 	];
