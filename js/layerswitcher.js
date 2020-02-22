@@ -297,9 +297,6 @@
 		//dibuja el grafico
 		renderChartLine(object.temperatura);
 
-		//crea imagen para descargar
-		var url_base64jp = document.getElementById("lineChart").toDataURL("image/jpg");
-		document.getElementById("link2").href = url_base64jp;
 
 	}
 
@@ -347,6 +344,14 @@
 				}
 			}
 		})
+
+		
+		//crea imagen para descargar
+		setTimeout(function(){ 
+			var url_base64jp = document.getElementById("lineChart").toDataURL("image/jpg");
+			document.getElementById("link2").href = url_base64jp;
+		 }, 2000);
+		
 	}
 
 	//***************** botones control
